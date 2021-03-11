@@ -1,0 +1,61 @@
+# Mono repo presentation
+
+## What will cover
+- What are mono repos
+- Why we should use them
+- How they work
+
+---
+# What are mono repos
+
+A Monorepository is an architectural concept, which basically contains all the meaning in its title.
+
+In simple terms.
+
+All the code that the project needs lives in one place
+
+
+---
+# What mono repos aren't
+- Monoliths
+- Poly repo
+- They are about sharing code and separating areas of concerns
+- They aren't a place to build applications that couples modules together
+- They don't store packages in a global scope (ie not installing packages in root dir)
+- A place to duplicate code
+---
+# Pros mono repos
+
+## Pros
+- One place to store all configs and tests
+- Easier dependency management
+- Re-use code with shared packages while still keeping them isolated
+- Easy to share packages in the same project and enforce hard boundaries
+
+---
+# Cons mono repos
+- Poor Git performance when working on large-scale projects
+- Large node_modules folder and installing can take longer
+- Large number of open Pull requests on one repo
+
+---
+# Why should we use them at Voyage
+
+- Decouple the presentation layer of code from the application code
+- Increase code sharing across projects.
+- Allows for re-uses of modules in other projects
+- Can publish and version packages
+---
+
+# What we have learnt about mono repos so far
+- Deployments are harder
+- Conceptually understanding takes thought
+- Patch package doesn't work well
+- Package names can conflict with npm packages
+
+Notes: Deployment scripts have to target the "scope" they want to run the code for
+
+# Thats it
+---
+
+Questions? 
